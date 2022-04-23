@@ -1,0 +1,510 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: grotesk;
+    src: url(../font/HKGrotesk-Medium.otf);
+}
+@font-face {
+    font-family: groteska;
+    src: url(../font/HKGrotesk-Light.otf);
+}
+@font-face {
+    font-family: groteskas;
+    src: url(../font/HKGrotesk-Regular.otf);
+}
+/* grid */
+
+.padre {  
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+}
+.header { grid-area: header; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+.padre__section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 0px 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+        "section1 section1 section1"
+        "publica publica publica"
+        "cards cards cards";
+}
+.section1{ grid-area: section1;}
+.publicidad{ grid-area: publica; }
+.cards{ grid-area: cards; }
+
+/*----HEADER/NAV---*/
+
+.header{
+    background-color:#BCBAB8;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+.header div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    width: auto;
+    height: 20%;
+}
+.header div a{
+    text-decoration: none;
+    font-family: grotesk;
+    color: black;
+    font-size: xx-large;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.header div img{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+}
+.header nav{
+    width: auto;   
+    margin-left: 4%;  
+    align-self: center;
+}
+
+.header nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+}
+.header nav ul li{
+    margin-left: 70px;
+    margin-right: 70px;
+
+}
+.header nav ul li a{
+    text-decoration: none;
+    font-family: groteska;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    text-shadow: 2px 2px 2px white;
+}
+
+/*----MAIN---*/
+
+.section1{
+    grid-column: 2;
+}
+.promo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9F9F9;
+    grid-column: 1/3;
+}
+.promo h2{
+    font-family: groteskas;
+}
+.promo img{
+    width: 60px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.section__one{
+    width: 100%;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/pexels-torsten-dettlaff-3571093.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section__one h1{
+    font-family: grotesk;
+    font-size: 50px;
+    margin-left: 70%;
+}
+.section__one p{
+    font-family: groteskas;
+    font-size: 20px;
+    margin-left: 70%;
+}
+.section__one a{
+    font-family: groteska;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    margin-left: 70%;
+    margin-top: 30px;
+    text-shadow: 3px 3px 3px black;
+}
+.section__one a:hover{
+    color: black;
+    transition: 0.1s;
+    text-shadow: none;
+}
+.section__two{
+    width: 100%;
+    height: 70vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/pexels-torsten-dettlaff-3623358.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section__two a{
+    font-family: groteska;
+    font-size: 30px; 
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+.section__two a:hover{
+    color: black;
+    transition: 0.1s;
+    text-shadow: none;
+}
+.section__three{
+    width: 100%;
+    height: 70vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/pexels-jess-bailey-designs-788946.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section__three a{
+    font-family: groteska;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 3px 3px 3px black;
+}
+.section__three a:hover{
+    color: white;
+    transition: 0.1s;
+    text-shadow: none;
+}
+.section__four{
+    width: 100%;
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/soporte.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section__four a{
+    font-family: groteska;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 3px 3px 3px black;
+}
+.section__four p{
+    font-family: groteskas;
+    font-size: 25px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    margin-top: 10px;
+    background-color: #bcbab880;
+    border-radius: 4px;
+    border: solid 2px grey; /* aca agregue bordes para cumplir con box modeling */
+}
+.section__four a:hover{
+    color: white;
+    transition: 0.1s;
+    text-shadow: none;
+}
+
+/*----FOOTER---*/
+
+.footer{
+    background-color: #BCBAB8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.footer img{
+    width: 50px;
+    height: 50px;
+}
+.footer a{
+    font-family: grotesk;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 3px 3px 3px white;
+}
+.footer p{
+    font-family: grotesk;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.footer__a{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+/*----IPHONE----*/
+
+.publicidad{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.publicidad p{
+    font-family: groteska;
+    color: orange;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.publicidad h3{
+    font-family: groteskas;
+    font-size: 25px;
+}
+.publicidad h2{
+    font-family: grotesk;
+    font-size: 45px;
+}
+.publicidad img{
+    width: 50%;
+}
+.cards{
+    height: 80vh;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: groteska;
+}
+.cards__estilo{
+    width: 14%;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #BCBAB8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+.cards__estilo img{
+    width: 230px;
+}
+
+/*----ACCESORIOS----*/
+
+.accesorios{
+    width: 100%;
+    height: 70vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/airpods-header-accessories-202110.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 2;
+    grid-column: 1/3;
+}
+.div__acc{
+    display: flex;
+    flex-direction: column;
+}
+.accesorios h1{
+    font-family: grotesk;
+    font-size: 50px;
+    margin-left: 70%;
+}
+.accesorios p{
+    font-family: groteskas;
+    font-size: 20px;
+    margin-left: 70%;
+    margin-right: 5%;
+}
+
+/*----SOPORTE----*/
+
+.soporte{
+    font-family: grotesk;
+    font-size: 50px;
+    margin-left: 5%;
+}
+.form{
+    height: 80vh;
+    margin-top: 5%;
+    font-family: groteskas;
+    grid-column: 1/3;
+}
+.form__div{
+    font-family: groteska;
+}
+
+/*----NOSOTROS----*/
+
+.section__uno{
+    width: 100%;
+    height: 70vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/camera_system__rp945vhdfsiu_large.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section__uno h1{
+    font-family: grotesk;
+    font-size: 50px;
+    margin-top: 10%;
+}
+.section__uno p{
+    font-family: groteskas;
+    font-size: 20px;
+}
+.section__dos{
+    width: 100%;
+    height: 70vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background: url("../img/pexels-opollo-photography-11525164.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section__dos p{
+    font-family: groteskas;
+    font-size: 20px;
+    height: 15%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 20px;
+}
+/* la idea en esta seccion es agregar fotos de las oficinas pero todavia no tengo muy claro como lo voy a hacer */
+.section__tres{ 
+    font-family: groteskas;
+    font-size: 30px;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section__tres p{
+    width: 60vh;
+    margin-left: 10vh;
+}
+.section__tres div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 10vh;
+}
+
+/* 360 */
+
+@media (max-width: 360px) {
+    .padre{
+        grid-template-areas: 
+        "header header"
+        "header header"
+        "main main"
+        "footer footer";
+    }
+    .header{
+        background-color:#BCBAB8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 15vh;
+        grid-column: 1/3;
+    }
+    .header div img{
+        width: 50px;
+        height: 50px;
+    }
+    .header nav{
+        width: auto;    
+        align-self: center;
+    }
+    .footer{
+        grid-column: 1/3;
+    }
+    body{
+        width: 360px;
+    }
+    .padre__section{
+        grid-template-areas: 
+        "section1 section1 section1"
+        "publica publica publica"
+        "cards cards cards"
+        "cards cards cards"
+        "cards cards cards";
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .cards__estilo{
+        width: 100%;
+    }
+    .accesorios h1{
+        font-family: grotesk;
+        font-size: 50px;
+        margin-left: 60%;
+    }
+    .accesorios p{
+        font-family: groteskas;
+        font-size: 20px;
+        margin-left: 60%;
+        margin-right: 5%;
+    }
+}
