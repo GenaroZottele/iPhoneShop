@@ -5,8 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>iPhone Shop</title>
-        <link rel="stylesheet" href="pages/style.css">
         <link rel="shortcut icon" href="/img/iss.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="pages/style.css">
     </head>
     <body>
        <header id="header" class="header">
@@ -34,19 +36,19 @@
                 </div>
             </section>
             <section class="section__one">
-                    <h1>iPhone Shop</h1>
-                    <p>"Tu primer iPhone al alcance de tu mano"</p>
-                    <a href="pages/nosotros.html">Ir a nosotros</a> <!--en comparacion a la entrega anterior le saque el "ul" ya que lo creo innecesario para solo poner un boton-->
+                    <h1 class="animate__animated animate__fadeInDownBig">iPhone Shop</h1>
+                    <p class="animate__animated animate__fadeInDownBig">"Tu primer iPhone al alcance de tu mano"</p>
+                    <a href="pages/nosotros.html" class="animate__animated animate__fadeInDownBig">Ir a nosotros</a> 
             </section>
             <section class="section__two">
-                <a href="pages/iphone.html">Ir a iPhone</a> <!--idem-->
+                <a href="pages/iphone.html" data-aos="zoom-in">Ir a iPhone</a> 
             </section>
             <section class="section__three">
-                <a href="pages/accesorios.html">Ir a accesorios</a> <!--idem-->
+                <a href="pages/accesorios.html" data-aos="zoom-in">Ir a accesorios</a>
             </section>
             <section class="section__four">
-                <a href="pages/soporte.html">Ir a soporte</a> <!--idem-->
-                <p>Brindamos el mejor asesoramiento del mercado a nuestros clientes.</p>
+                <a href="pages/soporte.html" data-aos="zoom-in">Ir a soporte</a> 
+                <p data-aos="zoom-in">Brindamos el mejor asesoramiento del mercado a nuestros clientes.</p>
             </section>
         </main>
         <footer>
@@ -61,5 +63,9 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
