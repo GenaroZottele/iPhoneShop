@@ -7,11 +7,31 @@
     <title>iPhone Shop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header id="header" class="header">
-        <div>
+<body class="container-fluid">
+    <header id="header" class="header row">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+            <div class="d-inline-flex">
+                <a class="navbar-brand fs-2 active" href="../index.html">
+                <img src="../img/is.png" alt="logo apple" width="45" height="45" class="d-inline-block align-text-bottom">
+                iPhone Shop
+                </a>
+            </div>
+            <button class="navbar-toggler list-inline mr-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
+                <div class="navbar-nav m-40 divnav">
+                    <a class="nav-link fs-4 active mx-3" href="iphone.html">iPhone</a>
+                    <a class="nav-link fs-4 mx-3" href="accesorios.html">Accesorios</a>
+                    <a class="nav-link fs-4 mx-3" href="soporte.html">Soporte</a>
+                    <a class="nav-link fs-4 mx-3" href="nosotros.html">Nosotros</a>
+                </div>
+            </div>    
+       </nav>
+        <!-- <div>
             <h1><a href="../index.html">iPhone Shop</a></h1>
             <img src="../img/580b57fcd9996e24bc43c516.png" alt="">
         </div>
@@ -22,7 +42,7 @@
                 <li><a href="soporte.html">Soporte</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
     <main>
         <section>
@@ -40,8 +60,40 @@
             <h2 class="animate__animated animate__fadeInRightBig">Muy muy Pro</h2>
             <img src="../img/iphone_13_pro__en2q051lfus2_large_2x.jpg" alt="">
         </section>
-        <section class="cards"> <!--esta section es para poner las cards con los iphone-->
-            <div class="cards__estilo" data-aos="fade-right">
+        <section class="card-group row row-cols-1 row-cols-md-3 g-4 container mx-auto">
+                <div class="col">
+                    <div class="card my-5 shadow p-3 mb-5 bg-body rounded" data-aos="fade-right">
+                        <img src="../img/iphone-13-pro-max-graphite-select.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">iPhone 13 Pro Max</h5>
+                            <p class="card-text text-center">El iPhone definitivo.</p>
+                            <p class="card-text fw-bold text-center">Desde $1099</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-5 shadow p-3 mb-5 bg-body rounded" data-aos="zoom-in">
+                        <img src="../img/iphone-13-pink-select-2021.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">iPhone 13</h5>
+                            <p class="card-text text-center">Una potencia total.</p>
+                            <p class="card-text fw-bold text-center">Desde $699</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card my-5 shadow p-3 mb-5 bg-body rounded" data-aos="fade-left">
+                        <img src="../img/iphone-13-pro-gold-select.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">iPhone 13 Pro</h5>
+                            <p class="card-text text-center">El iPhone definitivo.</p>
+                            <p class="card-text fw-bold text-center">Desde $999</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- <section class="cards"> esta section es para poner las cards con los iphone -->
+            <!-- <div class="cards__estilo" data-aos="fade-right">
                 <img src="../img/iphone-13-pro-max-graphite-select.png" alt="">
                 <h2>iPhone 13 Pro Max</h2>
                 <h3>El iPhone definitivo.</h3>
@@ -59,7 +111,7 @@
                 <h3>El iPhone definitivo</h3>
                 <h4>Desde $999</h4>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
         <div class="footer">
@@ -77,5 +129,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

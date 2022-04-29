@@ -1,8 +1,8 @@
-* {
+/* * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-}
+} */
 @font-face{
     font-family: grotesk;
     src: url(../font/HKGrotesk-Medium.otf);
@@ -17,34 +17,73 @@
 }
 /*----HEADER/NAV---*/
 
-.header{
+.divnav{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 16%;
+}
+
+/* intento nuevo */
+/* .header{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    background-color: #BCBAB8;
+}
+.header div{
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 0px;
+}
+
+.header div a{
+    font-size: 35px;
+    padding-top: 10px;
+    color: black;
+    margin-right: 0px;
+}
+
+.header nav{
+    background-color: #BCBAB8;
+}
+
+.header nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.nav__a{
+    font-size: 25px;
+    font-family: groteska;
+    color: black;
+} */
+/* intento viejo */
+/* .header{
     background-color:#BCBAB8;
     display: flex;
     align-items: center;
-    height: 10vh;
-}
-.header div{
+    height: 8vh;
+} */
+/* .header div{
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
     align-items: center;
     width: 15%;
     height: 20%;
-}
-.header div a{
+} */
+/* .header div a{
     text-decoration: none;
     font-family: grotesk;
     color: black;
     font-size: xx-large;
-    margin-left: 10px;
-    margin-top: 10px;
 }
 .header div img{
     width: 50px;
     height: 50px;
-    margin-left: 5px;
-}
-.header nav{
+
+} */
+/* .header nav{
     width: 85%;
     margin-left: 13%;
 }
@@ -65,16 +104,16 @@
     font-family: groteska;
     color: black;
     font-size: 20px;
-    padding: 5px;
+
     text-shadow: 2px 2px 2px white;
-}
+} */
 
 /*----MAIN---*/
 
 .promo{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     background-color: #F9F9F9;
 
 }
@@ -102,19 +141,19 @@
 .section__one h1{
     font-family: grotesk;
     font-size: 50px;
-    margin-left: 70%;
+    /* margin-left: 70%; */
 }
 .section__one p{
     font-family: groteskas;
     font-size: 20px;
-    margin-left: 70%;
+    /* margin-left: 70%; */
 }
 .section__one a{
     font-family: groteska;
     font-size: 30px;
     text-decoration: none;
     color: white;
-    margin-left: 70%;
+    /* margin-left: 70%; */
     margin-top: 30px;
     text-shadow: 3px 3px 3px black;
 }
@@ -267,7 +306,7 @@
 .publicidad img{
     width: 50%;
 }
-.cards{
+/* .cards{
     height: 80vh;
     background-color: #F9F9F9;
     display: flex;
@@ -288,7 +327,7 @@
 }
 .cards__estilo img{
     width: 230px;
-}
+} */
 
 /*----ACCESORIOS----*/
 
@@ -296,25 +335,29 @@
     width: 100%;
     height: 70vh;
     color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     background: url("../img/airpods-header-accessories-202110.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.accesorios h1{
-    font-family: grotesk;
-    font-size: 50px;
-    margin-left: 70%;
+.accesorios div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-left: 15px;
 }
-.accesorios p{
+.accesorios div h1{
+    font-family: grotesk;
+    /* font-size: 50px; */
+}
+.accesorios div p{
     font-family: groteskas;
-    font-size: 20px;
-    margin-left: 70%;
-    margin-right: 5%;
+    /* font-size: 20px; */
+    
+    
 }
 
 /*----SOPORTE----*/
@@ -373,7 +416,7 @@
 .section__dos p{
     font-family: groteskas;
     font-size: 20px;
-    height: 15%;
+    height: auto;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.726);
     border-radius: 3px;
