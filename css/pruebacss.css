@@ -1,0 +1,162 @@
+@font-face {
+  font-family: grotesk;
+  src: url(../font/HKGrotesk-Medium.otf); }
+
+@font-face {
+  font-family: groteska;
+  src: url(../font/HKGrotesk-Light.otf); }
+
+@font-face {
+  font-family: groteskas;
+  src: url(../font/HKGrotesk-Regular.otf); }
+
+.divnav {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 16%; }
+
+.promo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F9F9; }
+  .promo h2 {
+    font-family: groteskas; }
+  .promo img {
+    width: 60px;
+    margin-left: 35px;
+    margin-right: 35px; }
+
+.section__one {
+  width: 100%;
+  height: 70vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/pexels-torsten-dettlaff-3571093.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section__one h1 {
+    font-family: "grotesk";
+    font-size: 50px; }
+  .section__one p {
+    font-family: "groteskas";
+    font-size: 20px; }
+  .section__one a {
+    font-family: "groteska";
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    margin-top: 30px;
+    text-shadow: 3px 3px 3px black; }
+    .section__one a:hover {
+      color: black;
+      transition: 0.1s;
+      text-shadow: none; }
+
+.section__two {
+  width: 100%;
+  height: 70vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/pexels-torsten-dettlaff-3623358.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section__two a {
+    font-family: "groteska";
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 3px black; }
+    .section__two a:hover {
+      color: black;
+      transition: 0.1s;
+      text-shadow: none; }
+
+.section__three {
+  width: 100%;
+  height: 70vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/pexels-jess-bailey-designs-788946.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section__three a {
+    font-family: "groteska";
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 3px black; }
+    .section__three a:hover {
+      color: black;
+      transition: 0.1s;
+      text-shadow: none; }
+
+.section__four {
+  width: 100%;
+  height: 70vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/soporte.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section__four a {
+    font-family: "groteska";
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 3px black; }
+    .section__four a:hover {
+      color: black;
+      transition: 0.1s;
+      text-shadow: none; }
+  .section__four p {
+    font-family: groteskas;
+    font-size: 25px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    margin-top: 10px;
+    background-color: #bcbab880;
+    border-radius: 4px;
+    border: solid 2px grey; }
+
+.footer {
+  background-color: #BCBAB8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .footer img {
+    width: 50px;
+    height: 50px; }
+  .footer a {
+    font-family: grotesk;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-shadow: 3px 3px 3px white; }
+  .footer p {
+    font-family: grotesk;
+    font-size: 15px;
+    text-decoration: none;
+    color: black; }
+
+.footer__a {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px; }

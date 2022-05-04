@@ -1,0 +1,21 @@
+.divnav{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 16%;
+}
+.promo{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: #F9F9F9;
+}
+.promo{
+    h2{
+        font-family: groteskas;
+    }
+    img{
+        width: 60px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}

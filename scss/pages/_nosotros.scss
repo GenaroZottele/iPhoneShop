@@ -1,0 +1,36 @@
+@font-face{
+    font-family: grotesk;
+    src: url(../../font/HKGrotesk-Medium.otf);
+}
+@font-face {
+    font-family: groteska;
+    src: url(../../font/HKGrotesk-Light.otf);
+}
+@font-face {
+    font-family: groteskas;
+    src: url(../../font/HKGrotesk-Regular.otf);
+}
+
+$font-h: grotesk 50px;
+$font-p: groteskas 20px;
+
+.section__uno{
+    h1{
+        font: $font-h;
+        margin-top: 10%;
+    }
+    p{
+        font: $font-p;
+    }
+}
+.section__dos{
+    p{
+        font: $font-p;
+        height: auto;
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.726);
+        border-radius: 3px;
+        text-align: center;
+        padding-top: 20px; 
+    }
+}
