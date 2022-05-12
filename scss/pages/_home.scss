@@ -17,6 +17,24 @@ $size-h: 50px;
 $size-p: 20px;
 $size-a: 30px;
 
+@mixin h-1{
+    font-family: $font-h;
+    font-size: $size-h;
+}
+@mixin pp{
+    font-family: $font-p;
+    font-size: $size-p;
+}
+@mixin aa{
+    font-family: $font-a;
+    font-size: $size-a;
+}
+
+$redes: (
+    facebook: blue,
+    twitter: lightblue,
+    instagram: violet,
+);
 
 .divnav{
     display: flex;
@@ -37,30 +55,18 @@ $size-a: 30px;
         margin-right: 35px;
     }
 }
-.section__one{
+.section{
     width: 100%;
     height: 70vh;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("../img/pexels-torsten-dettlaff-3571093.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    h1{
-        font-family: $font-h;
-        font-size: $size-h;
-    }
-    p{
-        font-family: $font-p;
-        font-size: $size-p;
-    }
-    a{
-        font-family: $font-a;
-        font-size: $size-a; 
-        text-decoration: none;
+}
+
+.a{
+    @include aa;
+    text-decoration: none;
         color: white;
         margin-top: 30px;
         text-shadow: 3px 3px 3px black;
@@ -69,79 +75,124 @@ $size-a: 30px;
                 transition: 0.1s;
                 text-shadow: none;
             }
+}
+.section__one{
+    // width: 100%;
+    // height: 70vh;
+    // color: white;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    @extend .section;
+    flex-direction: column;
+    background: url("../img/pexels-torsten-dettlaff-3571093.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1{
+        // font-family: $font-h;
+        // font-size: $size-h;
+        @include h-1;
+    }
+    p{
+        // font-family: $font-p;
+        // font-size: $size-p;
+        @include pp;
+    }
+    a{
+        // font-family: $font-a;
+        // font-size: $size-a; 
+        // text-decoration: none;
+        // color: white;
+        // margin-top: 30px;
+        // text-shadow: 3px 3px 3px black;
+        //     &:hover{
+        //         color: black;
+        //         transition: 0.1s;
+        //         text-shadow: none;
+        //     }
+        @extend .a;
     }
 }
 .section__two{
-    width: 100%;
-    height: 70vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // width: 100%;
+    // height: 70vh;
+    // color: white;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @extend .section;
     background: url("../img/pexels-torsten-dettlaff-3623358.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     a{
-        font-family: $font-a;
-        font-size: $size-a; 
-        text-decoration: none;
-        color: white;
-        text-shadow: 3px 3px 3px black;
-            &:hover{
-                color: black;
-                transition: 0.1s;
-                text-shadow: none;
-            }
+        // font-family: $font-a;
+        // font-size: $size-a; 
+        // text-decoration: none;
+        // color: white;
+        // text-shadow: 3px 3px 3px black;
+        //     &:hover{
+        //         color: black;
+        //         transition: 0.1s;
+        //         text-shadow: none;
+        //     }
+        @extend .a;
     }
 }
 .section__three{
-    width: 100%;
-    height: 70vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // width: 100%;
+    // height: 70vh;
+    // color: white;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @extend .section;
     background: url(../img/pexels-jess-bailey-designs-788946.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     a{
-        font-family: $font-a;
-        font-size: $size-a; 
-        text-decoration: none;
-        color: white;
-        text-shadow: 3px 3px 3px black;
-            &:hover{
-                color: black;
-                transition: 0.1s;
-                text-shadow: none;
-            }
+        // font-family: $font-a;
+        // font-size: $size-a; 
+        // text-decoration: none;
+        // color: white;
+        // text-shadow: 3px 3px 3px black;
+        //     &:hover{
+        //         color: black;
+        //         transition: 0.1s;
+        //         text-shadow: none;
+        //     }
+        @extend .a;
     }
 }
 .section__four{
-    width: 100%;
-    height: 70vh;
-    color: white;
-    display: flex;
+    // width: 100%;
+    // height: 70vh;
+    // color: white;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    @extend .section;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: url(../img/soporte.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     a{
-        font-family: $font-a;
-        font-size: $size-a; 
-        text-decoration: none;
-        color: white;
-        text-shadow: 3px 3px 3px black;
-            &:hover{
-                color: black;
-                transition: 0.1s;
-                text-shadow: none;
-            }
+        // font-family: $font-a;
+        // font-size: $size-a; 
+        // text-decoration: none;
+        // color: white;
+        // text-shadow: 3px 3px 3px black;
+        //     &:hover{
+        //         color: black;
+        //         transition: 0.1s;
+        //         text-shadow: none;
+        //     }
+        @extend .a;
     }
     p{
         font-family: groteskas;
@@ -184,4 +235,14 @@ $size-a: 30px;
     margin-top: 5px;
     width: 50px;
     height: 50px;
+}
+
+.instagram{
+    background-color: map-get($redes, instagram);
+}
+.twitter{
+    background-color: map-get($redes, twitter);
+}
+.facebook{
+    background-color: map-get($redes, facebook);    
 }
