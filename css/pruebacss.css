@@ -276,3 +276,10 @@
 
 .section__tres div {
   font-family: groteskas; }
+
+@media (max-width: 768px) {
+  .section__uno h1, .section__dos h1 {
+    text-align: end;
+    padding-top: 90px; }
+  .section__dos {
+    background-position: center; } }
