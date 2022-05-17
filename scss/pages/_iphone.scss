@@ -35,6 +35,7 @@
     }
     h3{
         @include subtitulo;
+        text-align: center;
     }
     h2{
         @include titulo;
