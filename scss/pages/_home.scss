@@ -77,13 +77,6 @@ $redes: (
             }
 }
 .section__one{
-    // width: 100%;
-    // height: 70vh;
-    // color: white;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     @extend .section;
     flex-direction: column;
     background: url("../img/pexels-torsten-dettlaff-3571093.jpg");
@@ -91,90 +84,36 @@ $redes: (
     background-repeat: no-repeat;
     background-size: cover;
     h1{
-        // font-family: $font-h;
-        // font-size: $size-h;
         @include h-1;
     }
     p{
-        // font-family: $font-p;
-        // font-size: $size-p;
         @include pp;
     }
     a{
-        // font-family: $font-a;
-        // font-size: $size-a; 
-        // text-decoration: none;
-        // color: white;
-        // margin-top: 30px;
-        // text-shadow: 3px 3px 3px black;
-        //     &:hover{
-        //         color: black;
-        //         transition: 0.1s;
-        //         text-shadow: none;
-        //     }
         @extend .a;
     }
 }
 .section__two{
-    // width: 100%;
-    // height: 70vh;
-    // color: white;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     @extend .section;
     background: url("../img/pexels-torsten-dettlaff-3623358.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     a{
-        // font-family: $font-a;
-        // font-size: $size-a; 
-        // text-decoration: none;
-        // color: white;
-        // text-shadow: 3px 3px 3px black;
-        //     &:hover{
-        //         color: black;
-        //         transition: 0.1s;
-        //         text-shadow: none;
-        //     }
         @extend .a;
     }
 }
 .section__three{
-    // width: 100%;
-    // height: 70vh;
-    // color: white;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     @extend .section;
     background: url(../img/pexels-jess-bailey-designs-788946.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     a{
-        // font-family: $font-a;
-        // font-size: $size-a; 
-        // text-decoration: none;
-        // color: white;
-        // text-shadow: 3px 3px 3px black;
-        //     &:hover{
-        //         color: black;
-        //         transition: 0.1s;
-        //         text-shadow: none;
-        //     }
         @extend .a;
     }
 }
 .section__four{
-    // width: 100%;
-    // height: 70vh;
-    // color: white;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     @extend .section;
     flex-direction: column;
     background: url(../img/soporte.png);
@@ -182,16 +121,6 @@ $redes: (
     background-repeat: no-repeat;
     background-size: cover;
     a{
-        // font-family: $font-a;
-        // font-size: $size-a; 
-        // text-decoration: none;
-        // color: white;
-        // text-shadow: 3px 3px 3px black;
-        //     &:hover{
-        //         color: black;
-        //         transition: 0.1s;
-        //         text-shadow: none;
-        //     }
         @extend .a;
     }
     p{
@@ -206,7 +135,7 @@ $redes: (
     }
 }
 .footer{
-    background-color: #BCBAB8;
+    background-color: #212529;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,6 +143,7 @@ $redes: (
     img{
         width: 50px;
         height: 50px;
+        margin-top: 5px;
     }
     a{
         font-family: grotesk;
@@ -226,7 +156,7 @@ $redes: (
         font-family: grotesk;
         font-size: 15px;
         text-decoration: none;
-        color: black;
+        color: #adb5bd;
     }
 }
 .footer__a{
@@ -245,4 +175,17 @@ $redes: (
 }
 .facebook{
     background-color: map-get($redes, facebook);    
+}
+
+@media (max-width: 650px){
+    .promo{
+        h2{
+            font-size: 20px;
+        }
+        img{
+            width: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
 }

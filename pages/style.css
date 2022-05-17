@@ -223,11 +223,10 @@
     width: 100%;
     height: 70vh;
     color: black;
-    flex-direction: column;
-    justify-content: center;
     background: url("../img/airpods-header-accessories-202110.jpg") fixed center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-color: #f2f2f2;
 }
 .accesorios div{
     display: flex;
@@ -241,6 +240,15 @@
 }
 .accesorios div p{
     font-family: groteskas;
+}
+
+@media (max-width: 768px){
+    .accesorios{
+        background: url(../img/hero_airpods_left__e4mt0u0p25ea_small_2x.png) fixed bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-color: #f2f2f2;
+    }
 }
 
 /*----SOPORTE----*/

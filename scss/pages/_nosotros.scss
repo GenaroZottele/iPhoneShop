@@ -11,26 +11,47 @@
     src: url(../../font/HKGrotesk-Regular.otf);
 }
 
-$font-h: grotesk 50px;
-$font-p: groteskas 20px;
+$font-h: grotesk;
+$font-p: groteskas;
 
 .section__uno{
+    width: 100%;
+    height: 70vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../../img/camera_system__rp945vhdfsiu_large.png") center center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     h1{
-        font: $font-h;
+        @include h-1;
         margin-top: 10%;
     }
     p{
-        font: $font-p;
+        @include pp;
     }
 }
 .section__dos{
+    @extend .section__uno;
+    background: url("../../img/pexels-opollo-photography-11525164.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
     p{
-        font: $font-p;
+        @include pp;
         height: auto;
         width: 80%;
         background-color: rgba(255, 255, 255, 0.726);
         border-radius: 3px;
         text-align: center;
-        padding-top: 20px; 
+        padding-top: 20px;
+    }
+}
+.section__tres{
+    div{
+        font-family: groteskas;
     }
 }

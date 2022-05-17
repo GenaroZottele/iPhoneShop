@@ -89,14 +89,15 @@
     border: solid 2px grey; }
 
 .footer {
-  background-color: #BCBAB8;
+  background-color: #212529;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .footer img {
     width: 50px;
-    height: 50px; }
+    height: 50px;
+    margin-top: 5px; }
   .footer a {
     font-family: grotesk;
     font-size: 20px;
@@ -107,7 +108,7 @@
     font-family: grotesk;
     font-size: 15px;
     text-decoration: none;
-    color: black; }
+    color: #adb5bd; }
 
 .footer__a {
   margin-left: 10px;
@@ -124,3 +125,153 @@
 
 .facebook {
   background-color: blue; }
+
+@media (max-width: 650px) {
+  .promo h2 {
+    font-size: 20px; }
+  .promo img {
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px; } }
+
+@font-face {
+  font-family: grotesk;
+  src: url(../font/HKGrotesk-Medium.otf); }
+
+@font-face {
+  font-family: groteska;
+  src: url(../font/HKGrotesk-Light.otf); }
+
+@font-face {
+  font-family: groteskas;
+  src: url(../font/HKGrotesk-Regular.otf); }
+
+.publicidad {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .publicidad p {
+    font-family: groteska;
+    color: orange;
+    font-size: 20px;
+    margin-top: 10px; }
+  .publicidad h3 {
+    font-family: groteskas;
+    font-size: 25px; }
+  .publicidad h2 {
+    font-family: grotesk;
+    font-size: 45px; }
+  .publicidad img {
+    width: 50%; }
+
+@media (max-width: 800px) {
+  .publicidad {
+    height: 70vh; }
+    .publicidad img {
+      width: 100%; } }
+
+@font-face {
+  font-family: grotesk;
+  src: url(../font/HKGrotesk-Medium.otf); }
+
+@font-face {
+  font-family: groteska;
+  src: url(../font/HKGrotesk-Light.otf); }
+
+@font-face {
+  font-family: groteskas;
+  src: url(../font/HKGrotesk-Regular.otf); }
+
+.accesorios {
+  width: 100%;
+  height: 70vh;
+  color: black;
+  background: url("../../img/airpods-header-accessories-202110.jpg") fixed center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f2f2f2; }
+  .accesorios div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin-left: 15px; }
+    .accesorios div h1 {
+      font-family: grotesk; }
+    .accesorios div p {
+      font-family: groteskas; }
+
+@media (max-width: 768px) {
+  .accesorios {
+    height: 85vh;
+    background: url(../../img/hero_airpods_left__e4mt0u0p25ea_small_2x.png) fixed center bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #f2f2f2; }
+    .accesorios div {
+      padding-top: 55px; } }
+
+.soporte {
+  font-family: grotesk;
+  font-size: 50px;
+  margin-left: 5%; }
+
+.form {
+  height: 80vh;
+  margin-top: 5%;
+  font-family: groteskas; }
+
+.form__div {
+  font-family: groteska; }
+
+@font-face {
+  font-family: grotesk;
+  src: url(../../font/HKGrotesk-Medium.otf); }
+
+@font-face {
+  font-family: groteska;
+  src: url(../../font/HKGrotesk-Light.otf); }
+
+@font-face {
+  font-family: groteskas;
+  src: url(../../font/HKGrotesk-Regular.otf); }
+
+.section__uno, .section__dos {
+  width: 100%;
+  height: 70vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../../img/camera_system__rp945vhdfsiu_large.png") center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section__uno h1, .section__dos h1 {
+    font-family: grotesk;
+    font-size: 50px;
+    margin-top: 10%; }
+  .section__uno p, .section__dos p {
+    font-family: groteskas;
+    font-size: 20px; }
+
+.section__dos {
+  background: url("../../img/pexels-opollo-photography-11525164.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section__dos p {
+    font-family: groteskas;
+    font-size: 20px;
+    height: auto;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 20px; }
+
+.section__tres div {
+  font-family: groteskas; }
