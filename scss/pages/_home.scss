@@ -135,28 +135,63 @@ $redes: (
     }
 }
 .footer{
-    background-color: #212529;
+    background: url(../../img/fondo-textura-marmol-blanco-textura-marmol-abstracta-patrones-naturales-diseno_41389-491.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    img{
-        width: 50px;
-        height: 50px;
-        margin-top: 5px;
+    .redes{
+        text-align: center;
+        img{
+            width: 50px;
+            height: 50px;
+            margin-top: 5px;
+        }
+        a{
+            font-family: grotesk;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            text-shadow: 3px 3px 3px white;
+        }
+        p{
+            font-family: grotesk;
+            font-size: 15px;
+            text-decoration: none;
+            color: #6c757d;
+        }
+        h2{
+            font-family: grotesk;
+            font-size: 25px;
+            margin-top: 35px;
+        }
     }
-    a{
-        font-family: grotesk;
-        font-size: 20px;
-        text-decoration: none;
-        color: black;
-        text-shadow: 3px 3px 3px white;
+    .contacto{
+        h2{
+            font-family: grotesk;
+            font-size: 30px;
+        }
     }
-    p{
-        font-family: grotesk;
-        font-size: 15px;
-        text-decoration: none;
-        color: #adb5bd;
+    .oficinas{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        h2{
+            font-family: grotesk;
+            font-size: 30px;
+        }
+        div{
+            h3{
+                font-family: grotesk;
+                font-size: 25px;
+                margin-top: 10px;
+            }
+            p{
+                font-family: groteska;
+                font-size: 15px;
+                margin: 0%;
+            }
+        }
     }
 }
 .footer__a{
@@ -186,6 +221,19 @@ $redes: (
             width: 50px;
             margin-left: 20px;
             margin-right: 20px;
+        }
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        .contacto{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 35px;
+        }
+        .oficinas{
+            text-align: center;
+            margin-top: 35px;
         }
     }
 }

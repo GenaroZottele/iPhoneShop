@@ -89,26 +89,50 @@
     border: solid 2px grey; }
 
 .footer {
-  background-color: #212529;
+  background: url(../../img/fondo-textura-marmol-blanco-textura-marmol-abstracta-patrones-naturales-diseno_41389-491.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center; }
-  .footer img {
-    width: 50px;
-    height: 50px;
-    margin-top: 5px; }
-  .footer a {
+  .footer .redes {
+    text-align: center; }
+    .footer .redes img {
+      width: 50px;
+      height: 50px;
+      margin-top: 5px; }
+    .footer .redes a {
+      font-family: grotesk;
+      font-size: 20px;
+      text-decoration: none;
+      color: black;
+      text-shadow: 3px 3px 3px white; }
+    .footer .redes p {
+      font-family: grotesk;
+      font-size: 15px;
+      text-decoration: none;
+      color: #6c757d; }
+    .footer .redes h2 {
+      font-family: grotesk;
+      font-size: 25px;
+      margin-top: 35px; }
+  .footer .contacto h2 {
     font-family: grotesk;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-    text-shadow: 3px 3px 3px white; }
-  .footer p {
-    font-family: grotesk;
-    font-size: 15px;
-    text-decoration: none;
-    color: #adb5bd; }
+    font-size: 30px; }
+  .footer .oficinas {
+    padding-top: 25px;
+    padding-bottom: 25px; }
+    .footer .oficinas h2 {
+      font-family: grotesk;
+      font-size: 30px; }
+    .footer .oficinas div h3 {
+      font-family: grotesk;
+      font-size: 25px;
+      margin-top: 10px; }
+    .footer .oficinas div p {
+      font-family: groteska;
+      font-size: 15px;
+      margin: 0%; }
 
 .footer__a {
   margin-left: 10px;
@@ -132,7 +156,17 @@
   .promo img {
     width: 50px;
     margin-left: 20px;
-    margin-right: 20px; } }
+    margin-right: 20px; }
+  .footer {
+    display: flex;
+    flex-direction: column; }
+    .footer .contacto {
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 35px; }
+    .footer .oficinas {
+      text-align: center;
+      margin-top: 35px; } }
 
 @font-face {
   font-family: grotesk;
@@ -187,9 +221,9 @@
 
 .accesorios {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   color: black;
-  background: url("../../img/airpods-header-accessories-202110.jpg") fixed center center;
+  background: url("../../img/airpods-header-accessories-202110.jpg") fixed center bottom;
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #f2f2f2; }
@@ -239,22 +273,26 @@
   font-family: groteskas;
   src: url(../../font/HKGrotesk-Regular.otf); }
 
+@font-face {
+  font-family: grote;
+  src: url(../../font/HKGrotesk-Bold.otf); }
+
 .section__uno, .section__dos {
   width: 100%;
-  height: 70vh;
+  height: 86vh;
   color: black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  background: url("../../img/camera_system__rp945vhdfsiu_large.png") center center;
-  background-position: center;
+  background: url("../../img/camera_system__rp945vhdfsiu_large.png") center bottom;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain; }
   .section__uno h1, .section__dos h1 {
-    font-family: grotesk;
-    font-size: 50px;
-    margin-top: 10%; }
+    font-family: grote;
+    font-size: 90px;
+    margin-top: 5%; }
   .section__uno p, .section__dos p {
     font-family: groteskas;
     font-size: 20px; }
@@ -278,8 +316,11 @@
   font-family: groteskas; }
 
 @media (max-width: 768px) {
-  .section__uno h1, .section__dos h1 {
-    text-align: end;
-    padding-top: 90px; }
+  .section__uno, .section__dos {
+    background-position: center; }
+    .section__uno h1, .section__dos h1 {
+      text-align: end;
+      padding-top: 90px;
+      font-size: 70px; }
   .section__dos {
     background-position: center; } }
