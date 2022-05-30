@@ -10,25 +10,30 @@
     font-family: groteskas;
     src: url(../../font/HKGrotesk-Regular.otf);
 }
+@font-face {
+    font-family: grote;
+    src: url(../../font/HKGrotesk-Bold.otf);
+}
 
 $font-h: grotesk;
 $font-p: groteskas;
 
 .section__uno{
     width: 100%;
-    height: 70vh;
+    height: 86vh;
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    background: url("../../img/camera_system__rp945vhdfsiu_large.png") center center;
-    background-position: center;
+    background: url("../../img/camera_system__rp945vhdfsiu_large.png") center bottom;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     h1{
-        @include h-1;
-        margin-top: 10%;
+        font-family: grote;
+        font-size: 90px;
+        margin-top: 5%;
     }
     p{
         @include pp;
@@ -57,9 +62,11 @@ $font-p: groteskas;
 }
 @media (max-width: 768px){
     .section__uno{
+        background-position: center;
         h1{
             text-align: end;
             padding-top: 90px;
+            font-size: 70px;
         }
     }
     .section__dos{
