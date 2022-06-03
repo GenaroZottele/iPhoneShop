@@ -10,10 +10,14 @@
     font-family: groteskas;
     src: url(../font/HKGrotesk-Regular.otf);
 }
-$font-h: 'grotesk';
+@font-face {
+    font-family: grote;
+    src: url(../../font/HKGrotesk-Bold.otf);
+}
+$font-h: 'grote';
 $font-p: 'groteskas';
 $font-a: 'groteska';
-$size-h: 50px;
+$size-h: 70px;
 $size-p: 20px;
 $size-a: 30px;
 
@@ -66,7 +70,7 @@ $redes: (
 
 .a{
     @include aa;
-    text-decoration: none;
+        text-decoration: none;
         color: white;
         margin-top: 30px;
         text-shadow: 3px 3px 3px black;

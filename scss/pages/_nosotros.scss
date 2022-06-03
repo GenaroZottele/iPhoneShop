@@ -41,19 +41,37 @@ $font-p: groteskas;
 }
 .section__dos{
     @extend .section__uno;
-    background: url("../../img/pexels-opollo-photography-11525164.jpg");
+    height: 110vh;
+    background: url("../../img/fondo-textura-marmol-blanco-textura-marmol-abstracta-patrones-naturales-diseno_41389-491.webp") fixed;
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    p{
-        @include pp;
-        height: auto;
-        width: 80%;
-        background-color: rgba(255, 255, 255, 0.726);
-        border-radius: 3px;
-        text-align: center;
-        padding-top: 20px;
+    h2{
+        font-family: grote;
+        font-size: 60px;
+        margin-top: 10%;
     }
+    .section__dos-nosotros{
+        display: flex;
+        .section__dos-img{
+            margin-top: 5%;
+        }
+        .section__dos-text{
+            width: 50%;
+            margin-top: 3%;
+            div{
+                margin-top: 10%;
+                h3{
+                    font-size: 35px;
+                }
+                p{
+                    padding-top: 2%;
+                }
+            }
+        }
+
+    }
+    
 }
 .section__tres{
     div{
@@ -71,5 +89,22 @@ $font-p: groteskas;
     }
     .section__dos{
         background-position: center;
+        height: 170vh;
+        text-align: center;
+        .section__dos-nosotros{
+            display: flex;
+            flex-direction: column;
+        }
+        .section__dos-text{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            margin-left: 120px;
+            
+            div{
+                text-align: center;
+                
+            }
+        }
     }
 }
