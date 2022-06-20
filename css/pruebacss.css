@@ -93,7 +93,7 @@
     border: solid 2px grey; }
 
 .footer {
-  background: url(../../img/fondo-textura-marmol-blanco-textura-marmol-abstracta-patrones-naturales-diseno_41389-491.webp);
+  background: url(../img/130.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -303,7 +303,7 @@
 
 .section__dos {
   height: 110vh;
-  background: url("../../img/fondo-textura-marmol-blanco-textura-marmol-abstracta-patrones-naturales-diseno_41389-491.webp") fixed;
+  background: url("../img/130.jpg") fixed;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover; }
