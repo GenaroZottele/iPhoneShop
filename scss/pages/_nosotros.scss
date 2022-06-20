@@ -12,7 +12,7 @@
 }
 @font-face {
     font-family: grote;
-    src: url(../../font/HKGrotesk-Bold.otf);
+    src: url(../font/HKGrotesk-Bold.otf);
 }
 
 $font-h: grotesk;
@@ -26,7 +26,7 @@ $font-p: groteskas;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background: url("../../img/camera_system__rp945vhdfsiu_large.png") center bottom;
+    background: url("../img/camera_system__rp945vhdfsiu_large.png") center bottom;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
